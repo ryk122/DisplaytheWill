@@ -1,0 +1,11 @@
+C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\bin\Debug\netcoreapp2.1\DisplaytheWill.deps.json
+C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\bin\Debug\netcoreapp2.1\DisplaytheWill.runtimeconfig.json
+C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\bin\Debug\netcoreapp2.1\DisplaytheWill.runtimeconfig.dev.json
+C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\bin\Debug\netcoreapp2.1\DisplaytheWill.dll
+C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\bin\Debug\netcoreapp2.1\DisplaytheWill.pdb
+C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\obj\Debug\netcoreapp2.1\DisplaytheWill.csprojAssemblyReference.cache
+C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\obj\Debug\netcoreapp2.1\DisplaytheWill.csproj.CoreCompileInputs.cache
+C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\obj\Debug\netcoreapp2.1\DisplaytheWill.AssemblyInfoInputs.cache
+C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\obj\Debug\netcoreapp2.1\DisplaytheWill.AssemblyInfo.cs
+C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\obj\Debug\netcoreapp2.1\DisplaytheWill.dll
+C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\obj\Debug\netcoreapp2.1\DisplaytheWill.pdb
