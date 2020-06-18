@@ -1,0 +1,1 @@
+start dotnet C:\Users\ryk\source\repos\DisplaytheWill\DisplaytheWill\bin\Debug\netcoreapp2.1\DisplaytheWill.dll

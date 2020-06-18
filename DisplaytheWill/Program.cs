@@ -20,7 +20,7 @@ namespace DisplaytheWill
         public MainClass()
         {
             Read();
-            Display();
+            //Display();
         }
 
         private void Read()
@@ -66,6 +66,17 @@ namespace DisplaytheWill
             Console.WriteLine("Last login is");
             Console.Write(diffTime);
             Console.WriteLine(" before.");
+
+            if (diffTime.Seconds > 5)
+            {
+                Console.WriteLine("Long Time not Login.\n File is on Desktop");
+                Display();
+            }
+            if (diffTime.Days > 5)
+            {
+                Console.WriteLine("Long Time not Login.\n File is on Desktop");
+                Display();
+            }
         }
 
         private void Display()
@@ -73,6 +84,8 @@ namespace DisplaytheWill
             StreamWriter writer = new StreamWriter(System.Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "/Will.txt");
             writer.WriteLine("Will will be write here");
             writer.Close();
+
+            System.Diagnostics.Process.Start("notepad.exe", System.Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "/Will.txt");
         }
     }
 }
