@@ -8,36 +8,70 @@ namespace DisplaytheWill
         static void Main(string[] args)
         {
             MainClass mc = new MainClass();
+
+            Console.Write("Input Key to Close");
             Console.ReadKey();
         }
     }
 
     class MainClass
     {
+        const string LOG_FILE_NAME = "time.log";
         public MainClass()
         {
-            Console.WriteLine("new class");
             Read();
             Display();
-            
         }
 
         private void Read()
         {
-            if (!File.Exists("test.txt"))
+            
+            if (!File.Exists(LOG_FILE_NAME))
             {
-                StreamWriter writer = new StreamWriter("test.txt");
-                writer.WriteLine("File created using StreamWriter class.");
-                writer.Close();
+                WriteFile(LOG_FILE_NAME, DateTime.Now.ToString());
             }
-            string readText = File.ReadAllText("test.txt");
+
+            string readText = File.ReadAllText(LOG_FILE_NAME);
+            TimeCheck(readText);
+
+            WriteFile(LOG_FILE_NAME, DateTime.Now.ToString());
+            Console.WriteLine("Log In:"); 
             Console.WriteLine(readText);
+        }
+
+        private void WriteFile(string filename,string data)
+        {
+            StreamWriter writer;
+            writer = new StreamWriter(filename);
+            writer.WriteLine(data);
+            writer.Close();
+        }
+
+        private void TimeCheck(string timeString)
+        {
+            DateTime saveData;
+
+            if (DateTime.TryParse(timeString, out saveData))
+            {
+                Console.WriteLine("succeeded to get log");
+            }
+            else
+            {
+                Console.WriteLine("parse error!");
+                return;
+            }
+
+            TimeSpan diffTime = DateTime.Now - saveData;
+
+            Console.WriteLine("Last login is");
+            Console.Write(diffTime);
+            Console.WriteLine(" before.");
         }
 
         private void Display()
         {
-            StreamWriter writer = new StreamWriter("E:\\KBTest.txt");
-            writer.WriteLine("File created using StreamWriter class.");
+            StreamWriter writer = new StreamWriter(System.Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "/Will.txt");
+            writer.WriteLine("Will will be write here");
             writer.Close();
         }
     }
